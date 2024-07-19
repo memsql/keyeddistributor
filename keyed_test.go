@@ -1,4 +1,4 @@
-package keyed_test
+package keyeddistributor_test
 
 import (
 	"testing"
@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"singlestore.com/helios/events/keyed"
+	"github.com/memsql/keyeddistributor"
 )
 
 type MyEvent struct {
@@ -14,7 +14,7 @@ type MyEvent struct {
 }
 
 func TestKeyed(t *testing.T) {
-	distributor := keyed.New(func(e MyEvent) int {
+	distributor := keyeddistributor.New(func(e MyEvent) int {
 		return e.id % 4
 	})
 
