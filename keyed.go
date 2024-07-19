@@ -1,9 +1,9 @@
-package keyed
+package keyeddistributor
 
 import (
 	"github.com/sharnoff/eventdistributor"
 
-	"singlestore.com/helios/util/refcountmap"
+	"github.com/memsql/refcountmap"
 )
 
 /*
