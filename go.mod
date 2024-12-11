@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/memsql/refcountmap v0.1.1
 	github.com/sharnoff/eventdistributor v0.1.1
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.10.0
 )
 
 require (
