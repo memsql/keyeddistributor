@@ -1,6 +1,6 @@
 module github.com/memsql/keyeddistributor
 
-go 1.18
+go 1.23
 
 require (
 	github.com/memsql/refcountmap v0.2.0
